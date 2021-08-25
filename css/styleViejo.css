@@ -1,0 +1,264 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box ;
+}    
+
+
+body{
+    background-color: #f3c3e4;
+
+}
+/**** BUTTONS STYLE ****/
+
+input, select{
+    font-family: cursive;
+}
+.btn_menu, .menu_items a, .logo, h1 , label, .btn, #centrado{
+    color:white;
+    font-family: 'Caveat Brush', cursive;
+    text-shadow: 1px  0px 0px #401b4f,
+               0px  1px 0px #401b4f,
+              -1px  0px 0px #401b4f,
+               0px -1px 0px #401b4f;
+}
+
+
+p, #centrado{
+    font-size: 24px;
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+    margin: 3%;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: #fafafa;
+    
+}
+.main{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }    
+
+.centrado {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}  
+
+.fixed {
+    position: fixed;
+}
+
+.color {
+    background-color:#401b4f;   
+    font-size: 24px;
+    font-family: 'Caveat Brush', cursive;
+    color: rgba(245, 245, 245, 0.897);
+}
+
+.color2{
+    color:  #f3058f;
+}
+
+
+    /* ---------------------------- NAV ------------------------*/
+
+.logo{
+    color: white;        
+    font-size: 40px;
+    padding-left: 35px;
+    padding-right: 80px; /* the real shit */
+    text-decoration: none;
+}
+
+.menu{       
+    background-color:#401b4f;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+    border-bottom: 2px solid #f3058f;
+    box-shadow: 5px 0 10px white;  
+}
+
+.menu_items{            
+    list-style: none;
+    display: flex;
+    position: fixed;
+    height: calc(100% - 65px); /* El alto del menu sera de la pantalla completa menos el tamaño del nav */
+    background-color:#f3058f;
+    top: -100vh; /*En vez de ocultar la lista la desplazo fuera de la pantalla vh(viewport-height) */
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+    z-index: 1; /*pongo la lista en un label mas arriba */
+    width: 100%;      
+}
+
+.menu_items li {
+    border-radius: 3px; /* redondea los bordes *o* !!  */
+    margin: 30px 0 0 0;
+    line-height: 30px;
+}
+
+.menu_items li div {
+    padding-top: 18px;
+    height: 100%;   
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;  
+    text-transform: uppercase;
+    
+}
+
+.menu_items li:hover{
+    background: none;
+}
+
+.btn_menu{
+    display: inline-flex;
+    margin-right: 30px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;  /* Como es un span, no me aparecia la manito cuando pasaba sobre el boton */
+}
+
+
+ul.navigation {
+    flex-direction: row;    
+}
+
+ul.show{
+    top: 65px;
+}
+
+   
+
+
+
+
+
+
+/****************************  PRODUCTOS  ******************************/
+
+#productosLista{
+    list-style: none;
+}
+
+
+/**************************** MAIN CARRITO *********************************/
+.resaltado{
+    background-color: red;
+    opacity: 0,4;
+}
+
+#tableCart{
+    text-align: center;
+    width: 90%;
+    border: 1px solid #401b4f;
+}
+
+#total{
+    border: 2px solid #401b4f;
+}
+
+
+/**************************** CARRITO  ******************************/
+.payMethod{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Alinea los inputs con labels */ 
+      
+}
+
+.payMethod label{
+    margin: 0px 7px 0px 1px;
+}
+
+.formCarrito{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    color:white;
+    margin-top: 12px;
+    height: 30px;
+    font-size: large;
+    background-color:#401b4f;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: #f3058f;    
+}
+
+
+
+
+
+/********************************    DESKTOP     **************************************/
+/********************************                **************************************/
+/********************************                **************************************/
+
+
+    @media screen and (min-width: 850px){
+
+        
+        /****************************** D. NAV ****************************/
+
+        .logo{
+            font-size: 47px;
+            padding: 0 80px;
+        } 
+
+        .menu{
+            height: 75px;
+        }
+
+       .menu_items {
+           position: static;           
+            flex-direction: row;
+            margin-right: 30px;
+            transition: none;
+            height: 66px;
+            background-color: #401b4f;
+            width: auto;
+        }
+
+        .menu_items li {
+        margin: 0 5px;
+        }
+        
+        .menu_items li a {
+            font-size: 18px;
+            color: white;
+            font-weight: normal;    
+        }
+
+        .menu_items li:hover, li.active {
+            background-color: #f3058f;
+            transition: .4s;
+         
+        }   
+        
+
+        
+        /*************************** D MAIN ***********************************/
+
+        
+
+        
+    }

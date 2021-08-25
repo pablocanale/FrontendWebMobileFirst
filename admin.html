@@ -1,0 +1,49 @@
+
+    <body>    
+        <article id="adminSection">
+            <div class="p-4">
+                <h2>Turnos</h2>
+                <table class="table" id="tableTurnos"></table>
+            </div>
+
+            <div class="p-4">
+                <h2>Precios</h2>
+                <table class="table" id="tablePrecios"></table>
+            </div>
+
+            <form action="" id="formPrice" >
+                <div class="p-4" class="">
+                    <input class="form-control" type="text" placeholder="Nombre del producto" name="name">
+                    <input class="form-control" type="number" placeholder="Precio" name="price">                
+                    <button class="m-1 w-100 btn btn-primary" >Agregar</button>
+                    <button class="m-1 w-100 btn btn-primary" type="button" id="btn_x3">AgregarX3</button>
+                </div>
+
+                <div class="p-4">
+                    <input class="form-control" id="editar" type="number" placeholder="fila item a editar" name="aBorrar">                  
+                    <button class="m-1 w-100 btn btn-primary" type="button" id="btn_edit">Editar</button>
+                </div>
+
+                <div class="p-4">
+                    <input class="form-control" id="borrar" type="number" placeholder="fila item a borrar" name="aBorrar">                  
+                    <button class="m-1 w-100 btn btn-primary" type="button" id="btn_delete">Borrar Producto</button>              
+                </div>
+                
+                <div class="p-4">
+                    <input class="form-control" id="filtrar" type="string" placeholder="palabra por la que desea filtrar">
+                    <button class="m-1 w-100 btn btn-primary" type="button" id="btn_filtrar">Filtrar</button>
+                </div>            
+                                       
+            </form>  
+            
+
+            
+        </article>        
+        <script type="text/javascript" src="js/admin.js"></script>           
+    </body>
+
+   
+                
+            
+           
+           

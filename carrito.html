@@ -1,0 +1,34 @@
+
+ <!-- ESTE HTML NO SE USA PARA LA ENTREGA, NO SE TOCO, EL CARRITO FUNCIONA SOLO LOCALMENTE... EN ADMIN SE CUMPLEN LAS CONSIGNAS -->
+<body>             
+    <article class="p-4" >
+        <table class="table" id="tableCart"></table>                           
+            <div>
+                <div class="p-1">
+                    <label for="buyItem">¿Que desea Comprar?</label>
+                    <select class="form-select" name="items4Buy" id="buyItem"></select>                   
+                </div>
+
+                <div class="p-1">
+                    <label for="dni">Ingrese DNI de quien retirará</label>
+                    <input class="form-control" type="number" id="dni" name="dni">
+                </div>
+               
+                <div class="p-1">
+                    <h3>Forma de Pago</h3>              
+                    <input class="form-check-input" type="radio" id="tarjeta" name="payType" value="Tarjeta"/>
+                    <label for="tarjeta">Tarjeta</label>                    
+                    <input class="form-check-input" type="radio" id="efectivo" name="payType" value="Efectivo"/>
+                    <label for="efectivo">Efectivo</label>
+                </div>
+                <div id="btn">    
+                    <button class="btn btn-primary w-100 m-1" id="btn-add" >Agregar</button>
+                    <button class="btn btn-primary w-100 m-1" id="btn-add3" >Agregar 3</button>
+                    <button class="btn btn-primary w-100 m-1" id="btn-del" >Borrar</button>
+                </div>  
+            </div>
+    </article>
+
+    <script src="js/carrito.js"></script>    
+</body>        
+        
